@@ -1,0 +1,53 @@
+{
+  "transactions": [
+    {
+      "id": "tx-001",
+      "amount": 12500,
+      "user": "alice@example.com",
+      "timestamp": "2025-02-22T10:30:00Z",
+      "riskScore": 85
+    },
+    {
+      "id": "tx-002",
+      "amount": 320,
+      "user": "bob@example.com",
+      "timestamp": "2025-02-22T09:15:00Z",
+      "riskScore": 25
+    },
+    {
+      "id": "tx-003",
+      "amount": 8900,
+      "user": "carol@example.com",
+      "timestamp": "2025-02-22T08:00:00Z",
+      "riskScore": 62
+    },
+    {
+      "id": "tx-004",
+      "amount": 150000,
+      "user": "dave@example.com",
+      "timestamp": "2025-02-21T22:45:00Z",
+      "riskScore": 92
+    },
+    {
+      "id": "tx-005",
+      "amount": 45,
+      "user": "eve@example.com",
+      "timestamp": "2025-02-21T18:20:00Z",
+      "riskScore": 12
+    },
+    {
+      "id": "tx-006",
+      "amount": 5400,
+      "user": "frank@example.com",
+      "timestamp": "2025-02-21T14:10:00Z",
+      "riskScore": 55
+    },
+    {
+      "id": "tx-007",
+      "amount": 2100,
+      "user": "grace@example.com",
+      "timestamp": "2025-02-21T11:00:00Z",
+      "riskScore": 78
+    }
+  ]
+}
