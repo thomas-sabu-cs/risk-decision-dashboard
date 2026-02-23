@@ -147,6 +147,10 @@ No deploy step is included; you can add an S3/CloudFront deploy job using AWS cr
 
 All components and modules are typed with TypeScript interfaces. The ESLint rule `@typescript-eslint/no-explicit-any` is set to `error` so `any` types are disallowed.
 
+## Acknowledgments
+
+Initial implementation was built with assistance from **Cursor** (cursor.com). Credit in the repo instead of in git history.
+
 ## License
 
 MIT
