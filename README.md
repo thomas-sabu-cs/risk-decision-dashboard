@@ -2,6 +2,8 @@
 
 A full-stack **React 18 + TypeScript** web application that displays transactions with risk scoring. The dashboard fetches data from a REST API, filters by risk level using **React Context API**, and manages global state with **Redux Toolkit**. All UI is built with **React Hooks** and styled with **Tailwind CSS**.
 
+For an architecture overview, data flow, and notes on what was tricky during the build, see **[LEARNINGS.md](./LEARNINGS.md)**.
+
 ## Tech Stack
 
 - **Frontend:** React 18, TypeScript, Vite, React Hooks, Context API, Redux Toolkit
@@ -26,13 +28,15 @@ A full-stack **React 18 + TypeScript** web application that displays transaction
 
 ```
 src/
-  api/          # REST API client
-  components/   # Reusable UI (FilterBar, TransactionList, TransactionDetail)
-  context/      # Filter context (risk level)
-  pages/        # Dashboard page
-  store/        # Redux store and transactions slice
-  types/        # TypeScript interfaces (Transaction, RiskLevel)
+  api/          # REST API client (fetchTransactions)
+  components/   # FilterBar, TransactionList, TransactionRow, TransactionDetail
+  context/      # FilterContext (risk filter: All / High / Medium / Low)
+  pages/        # Dashboard (loads data, filter bar, list, detail drawer)
+  store/        # Redux store + transactions slice (loadTransactions thunk)
+  types/        # Transaction, RiskLevel, getRiskLevel()
   test/         # Vitest setup
+scripts/        # deploy-s3-cloudfront.js (build + deploy instructions)
+.github/        # workflows/ci.yml (lint + test)
 ```
 
 ## Prerequisites
